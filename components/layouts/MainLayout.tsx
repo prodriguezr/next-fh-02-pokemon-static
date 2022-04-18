@@ -18,8 +18,8 @@ export const MainLayout: FC<Props> = ({ children, title, pokemonName }) => {
 				<meta name='author' content='Pablo Rodríguez' />
 				<meta name='description' content={`Información sobre el pokemón ${pokemonName || ''}`} />
 				<meta name='keywords' content={`${title || 'Pokemon App'}, pokemón, pokedex`} />
-				<meta property="og:title" content={`Información sobre el pokemon ${title}`} />
-				<meta property="og:description" content={`Esta es la página sobre ${title}`} />
+				<meta property="og:title" content={`Información sobre el pokemon ${pokemonName}`} />
+				<meta property="og:description" content={`Esta es la página sobre ${pokemonName}`} />
 				<meta property="og:image" content={`${origin}/img/banner.png`} />
 			</Head>
 			<Navbar />
